@@ -1,4 +1,6 @@
-﻿namespace MauiNews;
+﻿using MauiNews.Views;
+
+namespace MauiNews;
 
 public partial class App : Application
 {
@@ -6,6 +8,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
+		MainPage = new NewsView();
 	}
 }

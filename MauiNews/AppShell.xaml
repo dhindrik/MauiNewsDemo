@@ -3,17 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:views="clr-namespace:MauiNews.Views"
              x:Class="MauiNews.AppShell"
-             Title="AppShell"
-             BackgroundColor="White">
-    <FlyoutItem Title="News">
-        <views:NewsView />
-    </FlyoutItem>
-    <FlyoutItem Title="About">
-        <ContentPage Title="About">
-            <VerticalStackLayout>
-                <Label Text="Hej" />
+             Title="AppShell" FlyoutBehavior="Flyout">
 
-            </VerticalStackLayout>
-            </ContentPage>
-    </FlyoutItem>
+           <ShellContent Title="News">
+
+        <views:NewsView />
+    </ShellContent>
+  
 </Shell>

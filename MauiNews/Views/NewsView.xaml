@@ -3,13 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:b="clr-namespace:Microsoft.AspNetCore.Components.WebView.Maui;assembly=Microsoft.AspNetCore.Components.WebView.Maui"
              xmlns:components="clr-namespace:MauiNews.Components;assembly=MauiNews.Components"
-             xmlns:root="clr-namespace:MauiNews;"
+             xmlns:root="clr-namespace:MauiNews"
              x:Class="MauiNews.Views.NewsView"
-             Title="News"
-             BackgroundColor="White">
+             Title="News" BackgroundColor="White" Padding="20">
+   
     <b:BlazorWebView HostPage="wwwroot/index.html">
         <b:BlazorWebView.RootComponents>
-            <!--<components:NewsList />-->
+           
             <b:RootComponent Selector="app" ComponentType="{x:Type root:Main}" />
         </b:BlazorWebView.RootComponents>
     </b:BlazorWebView>

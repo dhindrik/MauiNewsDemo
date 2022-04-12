@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
 	<PropertyGroup>
 		<TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
@@ -12,7 +12,7 @@
 		<EnableDefaultCssItems>false</EnableDefaultCssItems>
 
 		<!-- Display name -->
-		<ApplicationTitle>MauiNews</ApplicationTitle>
+		<ApplicationTitle>Maui News</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.mauinews</ApplicationId>
@@ -65,11 +65,5 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\MauiNews.Components\MauiNews.Components.csproj" />
 	  <ProjectReference Include="..\MauiNews.Core\MauiNews.Core.csproj" />
-	</ItemGroup>
-	<ItemGroup>
-	  <None Remove="Views\" />
-	</ItemGroup>
-	<ItemGroup>
-	  <Folder Include="Views\" />
-	</ItemGroup>
+	</ItemGroup>	
 </Project>
